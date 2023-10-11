@@ -5,7 +5,7 @@ bytes.
 
 Among them are functions:
 * to pack symbols into bytes; 
-* to unpack bytes into symbols; 
+* to unpack symbols from bytes; 
 * to hash a password with salt into a key; 
 * to hash a password with salt and compare it with another key; 
 * to generate a random salt for a password.
