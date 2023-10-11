@@ -15,6 +15,8 @@ Settings of hashing are hard-coded into the library.
 Argon2 algorithm was selected as the winner of the 2015 Password Hashing 
 Competition.
 
+## Allowed ASCII symbols
+
 Allowed password symbols include all 64 symbols of the range from 0x20 (32, 
 White Space) to 0x5F (95, Low Line).
 
