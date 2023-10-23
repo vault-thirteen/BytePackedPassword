@@ -10,11 +10,12 @@ import (
 )
 
 const (
-	ErrSymbolsCount      = "number of symbols must be a multiple of four"
-	ErrSymbolIsForbidden = "symbol is forbidden: %s"
-	ErrBytesCount        = "number of bytes must be a multiple of three"
-	ErrSaltLengthError   = "salt length error"
-	ErrRandomizer        = "randomizer is broken"
+	ErrSymbolsCountIsNotMultipleOfFour = "number of symbols must be a multiple of four"
+	ErrSymbolsCountTooShort            = "too short"
+	ErrSymbolIsForbidden               = "symbol is forbidden: %s"
+	ErrBytesCount                      = "number of bytes must be a multiple of three"
+	ErrSaltLengthError                 = "salt length error"
+	ErrRandomizer                      = "randomizer is broken"
 )
 
 const (
@@ -37,7 +38,7 @@ const (
 func PackSymbols(symbols []rune) (ba []byte, err error) {
 	symbolsCount := len(symbols)
 	if symbolsCount%4 != 0 {
-		return nil, errors.New(ErrSymbolsCount)
+		return nil, errors.New(ErrSymbolsCountIsNotMultipleOfFour)
 	}
 
 	// Convert UTF-8 runes (of ASCII segment) into byte-sized numbers.
@@ -121,8 +122,12 @@ func UnpackBytes(ba []byte) (symbols []rune, err error) {
 func IsPasswordAllowed(pwd string) (ok bool, err error) {
 	symbols := []rune(pwd)
 
-	if (len(symbols)%4 != 0) || (len(symbols) < MinPasswordLength) {
-		return false, errors.New(ErrSymbolsCount)
+	if len(symbols)%4 != 0 {
+		return false, errors.New(ErrSymbolsCountIsNotMultipleOfFour)
+	}
+
+	if len(symbols) < MinPasswordLength {
+		return false, errors.New(ErrSymbolsCountTooShort)
 	}
 
 	for _, s := range symbols {
