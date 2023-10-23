@@ -22,7 +22,7 @@ const (
 	LastSymbol         = '_' // Low Line.
 	MinAllowedSymbol   = FirstSymbol
 	MaxAllowedSymbol   = LastSymbol
-	MixPasswordLength  = 16
+	MinPasswordLength  = 16
 	SaltLengthRequired = 1024
 )
 
@@ -121,7 +121,7 @@ func UnpackBytes(ba []byte) (symbols []rune, err error) {
 func IsPasswordAllowed(pwd string) (ok bool, err error) {
 	symbols := []rune(pwd)
 
-	if (len(symbols)%4 != 0) || (len(symbols) < MixPasswordLength) {
+	if (len(symbols)%4 != 0) || (len(symbols) < MinPasswordLength) {
 		return false, errors.New(ErrSymbolsCount)
 	}
 
