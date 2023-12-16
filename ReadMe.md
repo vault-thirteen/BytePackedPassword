@@ -67,3 +67,16 @@ https://en.wikipedia.org/wiki/ASCII
 Basic latin segment of the Unicode is described here:  
 https://en.wikipedia.org/wiki/Basic_Latin_(Unicode_block)
 
+## Configuration
+
+This library uses constant settings while the _Argon 2_ algorithm is highly 
+dependent on all the settings.  
+The used settings are following.
+
+| Setting             | Value                      |
+|---------------------|----------------------------|
+| Memory usage        | 8 MiB, i.e. 8192 Kibibytes |
+| Threads             | 1                          |
+| Iterations (passes) | 8                          |
+| Salt length         | 1024                       |
+| Key length          | 1024                       |
