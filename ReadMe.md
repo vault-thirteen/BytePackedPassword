@@ -21,9 +21,9 @@ Allowed password symbols include all 64 symbols of the range from 0x20 (32,
 White Space) to 0x5F (95, Low Line).
 
 Passwords may contain following _ASCII_ symbols:
-* 10 number symbols from 0 to 9
-* 26 latin capital letters from A to Z
-* 28 special symbols
+* 10 number symbols from `0` to `9`;
+* 26 latin capital letters from `A` to `Z`;
+* 28 special symbols.
 
 28 allowed special (i.e. non-alphanumeric) symbols are listed below:
 
