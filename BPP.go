@@ -28,9 +28,9 @@ const (
 )
 
 const (
-	Argon2Iterations = 1
-	Argon2Threads    = 4
-	Argon2Memory     = 64 * 1024 // 64 MiB.
+	Argon2Iterations = 8
+	Argon2Memory     = 8 * 1024 // 8 MiB.
+	Argon2Threads    = 1
 	Argon2KeyLength  = 1024
 )
 
