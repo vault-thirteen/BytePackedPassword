@@ -10,9 +10,9 @@ Among them are functions:
 * to hash a password with salt and compare it with another key; 
 * to generate a random salt for a password.
 
-Hashing algorithm is Argon2 in general and Argon2id in particular.  
+Hashing algorithm is _Argon2_ in general and _Argon2id_ in particular.  
 Settings of hashing are hard-coded into the library.  
-Argon2 algorithm was selected as the winner of the 2015 Password Hashing 
+_Argon2_ algorithm was selected as the winner of the 2015 Password Hashing 
 Competition.
 
 ## Allowed ASCII symbols
@@ -20,7 +20,7 @@ Competition.
 Allowed password symbols include all 64 symbols of the range from 0x20 (32, 
 White Space) to 0x5F (95, Low Line).
 
-Passwords may contain following ASCII symbols:
+Passwords may contain following _ASCII_ symbols:
 * 10 number symbols from 0 to 9
 * 26 latin capital letters from A to Z
 * 28 special symbols
@@ -61,10 +61,10 @@ Passwords may contain following ASCII symbols:
 Password length must be a multiple of four due to technical limitations.  
 Minimal password length is 16 symbols.
 
-More information about ASCII can be found in the Internet:  
+More information about _ASCII_ can be found in the Internet:  
 https://en.wikipedia.org/wiki/ASCII
 
-Basic latin segment of the Unicode is described here:  
+Basic latin segment of the _Unicode_ is described here:  
 https://en.wikipedia.org/wiki/Basic_Latin_(Unicode_block)
 
 ## Configuration
