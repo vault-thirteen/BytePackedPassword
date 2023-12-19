@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/vault-thirteen/tester v1.2.0
-	golang.org/x/crypto v0.16.0
+	golang.org/x/crypto v0.17.0
 )
 
 require (
