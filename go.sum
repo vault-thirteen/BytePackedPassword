@@ -7,8 +7,8 @@ github.com/pkg/diff v0.0.0-20210226163009-20ebb0f2a09e/go.mod h1:pJLUxLENpZxwdsK
 github.com/rogpeppe/go-internal v1.9.0/go.mod h1:WtVeX8xhTBvf0smdhujwtBcq4Qrzq/fJaraNFVN+nFs=
 github.com/rogpeppe/go-internal v1.14.1 h1:UQB4HGPB6osV0SQTLymcB4TgvyWu6ZyliaW0tI/otEQ=
 github.com/rogpeppe/go-internal v1.14.1/go.mod h1:MaRKkUm5W0goXpeCfT7UZI6fk/L7L7so1lCWt35ZSgc=
-github.com/vault-thirteen/auxie v0.29.0 h1:2iDpuRD4o26bwoiBP+6GsBPfFSvPJLnPyFKyghR3Syw=
-github.com/vault-thirteen/auxie v0.29.0/go.mod h1:PqqgLkURByOdWLrM76FDVIaTRE/wwAcsEgkQXrSR0QA=
+github.com/vault-thirteen/auxie v0.29.2 h1:29ktOSDGsMVbE16ZqaAyQBaeU6BUgvowWDPetRYK+Nk=
+github.com/vault-thirteen/auxie v0.29.2/go.mod h1:yhrVNOrrnjFfah2oqQNGKmqbXjgkKLpZiZ0lKAWWjvE=
 golang.org/x/crypto v0.43.0 h1:dduJYIi3A3KOfdGOHX8AVZ/jGiyPa3IbBozJ5kNuE04=
 golang.org/x/crypto v0.43.0/go.mod h1:BFbav4mRNlXJL4wNeejLpWxB7wMbc79PdRGhWKncxR0=
 golang.org/x/sys v0.37.0 h1:fdNQudmxPjkdUTPnLn5mdQv7Zwvbvpaxqs831goi9kQ=
