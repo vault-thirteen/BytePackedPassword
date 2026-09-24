@@ -3,7 +3,7 @@ module github.com/vault-thirteen/BytePackedPassword
 go 1.26.8
 
 require (
-	github.com/vault-thirteen/auxie v0.36.9
+	github.com/vault-thirteen/auxie v0.37.0
 	golang.org/x/crypto v0.57.0
 )
 
